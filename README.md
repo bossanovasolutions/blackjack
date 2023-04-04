@@ -11,13 +11,13 @@ This is the Boilerplate app, powered by React Native and Expo.
 | [React Navigation](https://reactnavigation.org/)   |
 | [RNUI](https://wix.github.io/react-native-ui-lib/) |
 
-## Git flow / Branches
+## Trunk-Based / Branches
 
-We are going to follow a simplified version of [git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+We are going to follow a simplified version of [trunk-based](https://trunkbaseddevelopment.com/).
 
-- The start point branch is **development**, the production branch is **main**.
-- All feature branchs starts from **development**
-- Hotfixes start from **main**, then are merged in **development**
+- The trunk branch is **main**
+- All feature branchs starts from **main**
+- Each release is a new branch forked from **main**
 - Each new branch should have the branch name prefixed with one of the next options:
   - **feat**: For new features;
   - **fix**: For bugfixes;
