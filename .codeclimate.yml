@@ -1,0 +1,16 @@
+version: "2"
+checks:
+  file-lines:
+    config:
+      threshold: 250
+eslint:
+  enabled: true
+  config:
+    config: .eslintrc.json
+exclude_paths:
+  - "**/node_modules/"
+  - ios/
+  - android/
+  - .expo/
+  - "**/spec/"
+  - "./babel.config.js"
