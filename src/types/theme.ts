@@ -1,5 +1,7 @@
+import 'styled-components/native';
+
 declare module 'styled-components/native' {
-  export type DefaultTheme = {
+  export interface DefaultTheme {
     colors: {
       primary: string;
       backgroundLight: string;
@@ -42,10 +44,10 @@ declare module 'styled-components/native' {
       height: number;
     };
     fonts: {
+      light: string;
       regular: string;
       semibold: string;
       bold: string;
-      handwrite: string;
     };
   }
 }

@@ -4,7 +4,7 @@ import { Button, Container, Divider, Title, SubTitle, Text } from '@components';
 import BackgroundImage from '../../../../assets/images/splash.png';
 import { ButtonContainer, ScreenContainer, TextContainer } from './styles';
 
-type Props = NativeStackScreenProps<RootStackParams, 'Login'>;
+type Props = NativeStackScreenProps<RootStackParams, 'Welcome'>;
 
 const WelcomeScreen = ({ navigation }: Props) => {
   const goToNextScreen = async () => {

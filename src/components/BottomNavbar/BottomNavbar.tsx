@@ -39,7 +39,6 @@ const BottomNavbar = ({ active }: NavbarProps) => {
     },
   ];
 
-  // @TODO: Added the `as never` because I couldn't fix the Typescript error "No overload matches this call."
   const goToScreen = (screen: string): void =>
     navigation.navigate(screen as never);
 
