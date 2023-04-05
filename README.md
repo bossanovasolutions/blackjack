@@ -66,8 +66,28 @@ We are going to follow a basic domain driven design, taking full advantage of co
 ├─ routes/              # Routes
 ```
 
+# Get Started
+
 ## Rename app
 
 ```
 npx react-native-rename "name" -b "com.bossanovasolutions.name"
 ```
+
+## Setup new project on firebase
+- Enable Login with Phone, Apple, Google and Email Passwordless
+- Copy GoogleService-Info.plist
+- Configure Dynamic Link
+
+## On Xcode
+- Configure URL Schema (Info -> URL Types)
+- Add Dynamic Link (Signing & Capabilities -> Associated Domains)
+- Enable Capabilities (Signing & Capabilities -> + Capability)
+  - Sign in with Apple
+  - Background Notifications (Remote notifications, Background Fetch)
+  - AutoFill Cretendential Provider
+  - Push Notifications
+- Configure firebase Exception Domain
+
+## On Apple Connect
+- Configure APN
