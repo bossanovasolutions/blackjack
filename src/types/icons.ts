@@ -123,7 +123,6 @@ export type Icons =
   | 'Loading'
   | 'Location'
   | 'LocationMarker'
-  | 'Medal'
   | 'Menu'
   | 'MessageSend'
   | 'Microphone'

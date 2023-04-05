@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import styled, { css } from 'styled-components/native';
+import styled, { css, DefaultTheme } from 'styled-components/native';
 import CountryPicker, { Flag } from 'react-native-country-picker-modal';
-import { DefaultTheme } from 'styled-components/native';
 import { Text } from '../Text/Text';
 
 const Container = styled.TouchableOpacity`

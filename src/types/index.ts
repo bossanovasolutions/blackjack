@@ -1,3 +1,3 @@
 export * from './profile';
 export * from './router';
-export * from './icons';
+export * from "./icons"

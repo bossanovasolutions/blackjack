@@ -42,7 +42,7 @@ const sendSignInLinkToEmail = async (email: string) => {
   await auth().sendSignInLinkToEmail(email, actionCodeSettings);
 };
 
-const storeUser = async (user: FirebaseAuthTypes.User) => {};
+// const storeUser = async (user: FirebaseAuthTypes.User) => {};
 
 const signOut = async () => {
   try {

@@ -1,6 +1,5 @@
 import { theme as baseTheme } from '@theme';
-import styled, { css } from 'styled-components/native';
-import { DefaultTheme } from 'styled-components/native';
+import styled, { css, DefaultTheme } from 'styled-components/native';
 import MaskInput from 'react-native-mask-input';
 
 type InputContainerProps = {

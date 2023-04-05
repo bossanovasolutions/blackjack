@@ -1,10 +1,9 @@
-import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import { WelcomeScreen } from './Welcome';
-import { theme } from '../../../styles/theme';
 import { ThemeProvider } from 'styled-components/native';
 import { RootStackParams } from '@types';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { WelcomeScreen } from './Welcome';
+import { theme } from '../../../styles/theme';
 
 describe('WelcomeScreen', () => {
   const mockNavigation: NativeStackScreenProps<RootStackParams, 'Welcome'> = {

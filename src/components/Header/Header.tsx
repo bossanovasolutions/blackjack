@@ -1,9 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import type { RootStackParams } from '@types';
+import { ReactNode } from 'react';
 import { Icon } from '../Icon/Icon';
 import { HeaderContainer, BackButton } from './styles';
 import { Logo } from '../Logo/Logo';
+
 
 type Props = {
   navBack?: () => void;
@@ -14,7 +16,7 @@ type Props = {
   noLogo?: boolean;
   light?: boolean;
   absolute?: boolean;
-  children?: React.ReactNode;
+  children?: ReactNode;
 };
 
 export const Header = ({

@@ -1,12 +1,8 @@
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import type { RootStackParams } from '@types';
 import { BottomNavbar, Text, Title } from '@components';
 import { ContentContainer, ScreenContainer } from './styles';
 
-type Props = NativeStackScreenProps<RootStackParams, 'Home'>;
 
-const HomeScreen = ({ navigation }: Props) => {
-  return (
+const HomeScreen = () => (
     <ScreenContainer>
       <ContentContainer>
         <Title mv={42}>Home</Title>
@@ -20,7 +16,6 @@ const HomeScreen = ({ navigation }: Props) => {
 
       <BottomNavbar active="search" />
     </ScreenContainer>
-  );
-};
+  )
 
 export { HomeScreen };

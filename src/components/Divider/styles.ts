@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components/native';
-import { DefaultTheme } from 'styled-components/native';
+import styled, { css, DefaultTheme } from 'styled-components/native';
 
 export const DividerBar = styled.View`
   ${({ theme }: { theme: DefaultTheme }) => css`

@@ -1,8 +1,6 @@
 import { ActivityIndicator } from 'react-native';
-import { Button, Alert, Logo } from '@components';
+import { Button, Alert, Logo, Icon } from '@components';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import Icon from 'react-native-vector-icons/Feather';
-import { theme } from '@theme';
 import { useContext } from 'react';
 import {
   ScreenContainer,
@@ -28,8 +26,8 @@ const EmailVerificationScreen = ({ route }: Props) => {
   const sendLinkAgain = () => {
     try {
       return sendSignInLinkToEmail(email);
-    } catch (e) {
-      return Alert('Error', e.message.split(']')[1]);
+    } catch (e: any) {
+      return Alert('Error', e?.message?.split(']')[1]);
     }
   };
 
@@ -40,7 +38,7 @@ const EmailVerificationScreen = ({ route }: Props) => {
           <Logo mb={56} />
           <Title>An Error Occured</Title>
           <IconContainer>
-            <Icon name="x" size={100} color={theme.colors.red} />
+            <Icon name="Email" size={100} color="red" />
           </IconContainer>
           <Text>{error}</Text>
           <LinkContainer>
@@ -60,7 +58,7 @@ const EmailVerificationScreen = ({ route }: Props) => {
           <Logo mb={56} />
           <Title>Email verified</Title>
           <IconContainer>
-            <Icon name="check" size={80} color={theme.colors.primary} />
+            <Icon name="Checklist" size={80} color="primary" />
           </IconContainer>
         </ContentContainer>
         <Button label="Continue" full />

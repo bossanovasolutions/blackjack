@@ -5,9 +5,9 @@ import { StatusBar } from 'expo-status-bar';
 import { theme } from '@theme';
 import { loadFonts } from '@hooks';
 import { AuthProvider } from '@contexts';
-import { Routes } from './src/routes';
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from '@services';
+import { Routes } from './src/routes';
 
 ExpoSplashScreen.preventAutoHideAsync();
 
