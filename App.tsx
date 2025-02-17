@@ -33,10 +33,10 @@ export const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-          <>
-            <StatusBar style="dark" />
-            <Routes />
-          </>
+        <>
+          <StatusBar style="dark" />
+          <Routes />
+        </>
       </ThemeProvider>
     </QueryClientProvider>
   );
