@@ -3,16 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import analytics from '@react-native-firebase/analytics';
 import type { RootStackParams } from '@types';
-import { AuthContext } from '@contexts';
-
-// Auth
-import {
-  WelcomeScreen,
-  LoginScreen,
-  PhoneVerificationScreen,
-  LoginWithEmailScreen,
-  EmailVerificationScreen,
-} from '../domains/Auth';
 
 // Home
 import { HomeScreen } from '../domains/Home';
@@ -20,7 +10,6 @@ import { HomeScreen } from '../domains/Home';
 const RootStack = createNativeStackNavigator<RootStackParams>();
 
 const Routes = () => {
-  const { isAuthenticated } = React.useContext(AuthContext);
   const navigationRef = React.useRef(null);
   const routeNameRef = React.useRef(null);
 
@@ -48,28 +37,6 @@ const Routes = () => {
       onStateChange={onRouteChange}
     >
       <RootStack.Navigator>
-        {!isAuthenticated ? (
-          // AUTH
-          <RootStack.Group
-            navigationKey="Auth"
-            screenOptions={{ headerShown: false }}
-          >
-            <RootStack.Screen name="Welcome" component={WelcomeScreen} />
-            <RootStack.Screen name="Login" component={LoginScreen} />
-            <RootStack.Screen
-              name="PhoneVerification"
-              component={PhoneVerificationScreen}
-            />
-            <RootStack.Screen
-              name="LoginWithEmail"
-              component={LoginWithEmailScreen}
-            />
-            <RootStack.Screen
-              name="EmailVerification"
-              component={EmailVerificationScreen}
-            />
-          </RootStack.Group>
-        ) : (
           <>
             {/* CARS */}
             <RootStack.Group
@@ -83,7 +50,6 @@ const Routes = () => {
               />
             </RootStack.Group>
           </>
-        )}
       </RootStack.Navigator>
     </NavigationContainer>
   );

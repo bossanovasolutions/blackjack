@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components/native';
 import { StatusBar } from 'expo-status-bar';
 import { theme } from '@theme';
 import { loadFonts } from '@hooks';
-import { AuthProvider } from '@contexts';
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from '@services';
 import { Routes } from './src/routes';
@@ -34,12 +33,10 @@ export const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-        <AuthProvider>
           <>
             <StatusBar style="dark" />
             <Routes />
           </>
-        </AuthProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );
