@@ -115,7 +115,7 @@ android {
 
     namespace "com.boilerplate"
     defaultConfig {
-        applicationId 'com.bossanovasolutions.boilerplate'
+        applicationId 'com.bossanovasolutions.blackjack'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

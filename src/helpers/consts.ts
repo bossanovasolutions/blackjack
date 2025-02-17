@@ -4,7 +4,7 @@ export const isIos = Platform.OS === 'ios';
 
 export const androidTop = isIos ? 70 : StatusBar.currentHeight;
 
-export const BUNDLE_ID = 'com.bossanovasolutions.boilerplate';
+export const BUNDLE_ID = 'com.bossanovasolutions.blackjack';
 
 export const DEEPLINK = 'https://boilerplate.page.link/emailverified';
 

@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "boilerplate",
-    "slug": "boilerplate",
+    "name": "blackjack",
+    "slug": "blackjack",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "blackjack",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -17,14 +17,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.bossanovasolutions.boilerplate"
+      "bundleIdentifier": "com.bossanovasolutions.blackjack"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.bossanovasolutions.boilerplate"
+      "package": "com.bossanovasolutions.blackjack"
     },
     "web": {
       "bundler": "metro",

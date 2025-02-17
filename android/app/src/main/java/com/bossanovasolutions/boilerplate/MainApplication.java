@@ -1,4 +1,4 @@
-package com.bossanovasolutions.boilerplate;
+package com.bossanovasolutions.blackjack;
 
 import android.app.Application;
 import android.content.res.Configuration;
